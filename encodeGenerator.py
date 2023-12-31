@@ -1,6 +1,6 @@
 import cv2 as cv
 import face_recognition
-import pickle
+import pickle_1
 import os
 
 import firebase_admin
@@ -44,6 +44,6 @@ encodeListKnownWithIds = [encodeListKnown, studentIds]
 print("Encoding completed")
 
 file = open("Encodefile.p", "wb")
-pickle.dump(encodeListKnownWithIds, file)
+pickle_1.dump(encodeListKnownWithIds, file)
 file.close()
 print("File Saved")
